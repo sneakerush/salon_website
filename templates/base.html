@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Looks Salon</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Bootstrap 5 w/ js -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css"></link>
+    <script src="/static/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    {% block content %}
+    <div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="{{ url_for('staff') }}">Staff</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            <li><a href="{{ url_for('about') }}">About Us</a></li>
+            <li><a href="{{ url_for('book') }}">Gallery</a></li>
+            <li><a href="{{ url_for('book') }}">Book Now</a></li>
+          </ul>
+    </div>
+<!-- Sticky Button ontop of screen, turned off currently -->
+    <!-- <div class="book-now-header">
+        <a href="{{ url_for('book') }}" class="button">Book Now</a>
+    </div> -->
+    {% endblock %}
+
+</body>
+</html>

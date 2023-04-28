@@ -1,0 +1,163 @@
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: #F8F4EF;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    position: sticky; top: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: rgb(0, 0, 0);
+}
+  
+
+.book-now-header {
+    background-color: #F8F4EF;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.button {
+    background-color: #c9bfb0;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+}
+
+.image-container p {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 50px;
+}
+
+.image-container a {
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.staff-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+.staff-member {
+    width: 23%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+.staff-member img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    padding: 10px;
+}
+  
+.staff-member h3{
+    font-family: 'CustomFont', cursive;
+    font-size: 20px;
+    margin-top: 10px;
+    
+}
+ 
+.staff-member-title h1 {
+    font-family: 'CustomFont', cursive;
+    font-size: 40px;
+    position: center;
+    margin-top: 10px;
+    
+}
+
+.staff-member p {
+    margin-top: 5px;
+}
+  
+.social-icon {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 20px;
+    color: #000; /* Adjust the color as needed */
+}
+
+.carousel-inner img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+
+.center-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.large-text {
+    font-size: 16px;
+}
+
+.accordion-header, h2 {
+    font-size: 24px;
+}

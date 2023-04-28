@@ -1,0 +1,26 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Bootstrap 5 w/ js -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css"></link>
+    <script src="/static/js/bootstrap.min.js"></script>
+
+</head>
+
+{% extends 'base.html' %}
+
+{% block title %}My Example Page{% endblock %}
+
+{% block content %}
+    {{ super() }}
+<div>
+    <h2>Contact</h2>
+</div>
+<div class="">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13331.594034606744!2d-84.1103297!3d33.3476012!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f45cbd202846ab%3A0xf1fa0696de5132c9!2sFlourish%20Salon%20and%20Blow%20Dry%20Bar!5e0!3m2!1sen!2sus!4v1682617966047!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+    
+    
+{% endblock %}

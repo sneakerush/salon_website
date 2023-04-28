@@ -1,0 +1,51 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Bootstrap 5 w/ js -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css"></link>
+    <script src="/static/js/bootstrap.min.js"></script>
+
+</head>
+
+{% extends 'base.html' %}
+
+{% block content %}
+    {{ super() }}
+    <div class="staff-member-title">
+        <h1>Meet Our Staff</h1>
+    </div>    
+    <!-- Other page-specific content -->
+    <br>
+    <div class="staff-container">
+        {% for staff in staff_names %}
+            <div class="staff-member">
+                {% for key, value in staff_imgs.items() %}
+                    {% if key == staff %}
+                        <img src="{{ value }}" alt="{{ staff }}">
+                    {% endif %}
+                {% endfor %}
+                    <h3>{{ staff }}</h3>
+                    <p>
+                        {% for key, value in social_links[staff].items() %}
+                            {% if key == 'instagram' %}
+                                <a href="{{ value }}" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            {% elif key == 'twitter' %}
+                                <a href="{{ value }}" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            {% elif key == 'facebook' %}
+                                <a href="{{ value }}" class="social-icon"><i class="fab fa-facebook"></i></a>
+                            {% elif key == 'phone' %}
+                                <a href="{{ value }}" class="social-icon"><i class="fas fa-phone"></i></a>
+                            {% endif %}
+                        {% endfor %}
+                    </p>
+            </div>
+        {% endfor %}
+    </div>
+
+
+
+
+
+{% endblock %}
