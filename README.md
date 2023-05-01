@@ -5,7 +5,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This is a simple Salon Website I created for a Local Salon. The website can be altered to suite any ```for-service``` business model
+This is a simple Salon Website I created for a Local Salon. The website can be altered to suit any ```for-service``` business model
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
